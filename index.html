@@ -27,7 +27,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="treloo-logo first-logo" id="home" onclick="active('home')">
+                <div class="treloo-logo first-logo" id="home" onclick="setActiveNavItem('home')">
                     Treloo
                 </div>
                 <div class="new-menu">
@@ -35,10 +35,10 @@
                         <i class="fa-solid fa-bars"></i> HOME
                     </button>
                     <ul id="new-menu-ul">
-                        <li id="1" onclick="active(1)" class="active">Reveiw</li>
-                        <li id="2" onclick="active(2)" class="active">Tips</li>
-                        <li id="3" onclick="active(3)" class="active">Alerts</li>
-                        <li id="4" onclick="active(4)" class="active">Blog</li>
+                        <li id="1" onclick="setActiveNavItem(1)" class="active">Reveiw</li>
+                        <li id="2" onclick="setActiveNavItem(2)" class="active">Tips</li>
+                        <li id="3" onclick="setActiveNavItem(3)" class="active">Alerts</li>
+                        <li id="4" onclick="setActiveNavItem(4)" class="active">Blog</li>
                     </ul>
                 </div>
 
@@ -47,10 +47,10 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li id="1" onclick="active(1)" class="active">Reveiw</li>
-                        <li id="2" onclick="active(2)" class="active">Tips</li>
-                        <li id="3" onclick="active(3)" class="active">Alerts</li>
-                        <li id="4" onclick="active(4)" class="active">Blog</li>
+                        <li id="1" onclick="setActiveNavItem(1)" class="active">Reveiw</li>
+                        <li id="2" onclick="setActiveNavItem(2)" class="active">Tips</li>
+                        <li id="3" onclick="setActiveNavItem(3)" class="active">Alerts</li>
+                        <li id="4" onclick="setActiveNavItem(4)" class="active">Blog</li>
                     </ul>
                     <button>Contact</button>
                 </div>
@@ -99,7 +99,7 @@
                             </div>
                             <i class="fa fa-calendar-days"></i>  
                             <div>
-                                <span class="">Return <i class="fa-sharp fa-solid fa-plane back-plane"></i></span>
+                                <span>Return <i class="fa-sharp fa-solid fa-plane back-plane"></i></span>
                                 <p>14 Feb, Thu</p>
                             </div>
                         </div>
@@ -135,12 +135,12 @@
                 <div id="second-tabs-1">
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/hermansyah-7uXn7nudorc-unsplash-scaled.jpg" alt="">
+                            <img src="./images/first_section_image_1.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -154,12 +154,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/ansgar-scheffold-huk2w9fa-jw-unsplash.jpg" alt="">
+                            <img src="./images/first_section_image_2.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Adventure</span>
+                                <span class="blue">Adventure</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -173,12 +173,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/simon-migaj-Yui5vfKHuzs-unsplash-copy-2.jpg" alt="">
+                            <img src="./images/first_section_image_3.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -194,12 +194,12 @@
                 <div id="second-tabs-2">
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/hermansyah-7uXn7nudorc-unsplash-scaled.jpg" alt="">
+                            <img src="./images/first_section_image_1.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -213,12 +213,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/simon-migaj-Yui5vfKHuzs-unsplash-copy-2.jpg" alt="">
+                            <img src="./images/first_section_image_3.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -232,12 +232,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/ansgar-scheffold-huk2w9fa-jw-unsplash.jpg" alt="">
+                            <img src="./images/first_section_image_2.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Adventure</span>
+                                <span  class="blue">Adventure</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -253,12 +253,12 @@
                 <div id="second-tabs-3">
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/ansgar-scheffold-huk2w9fa-jw-unsplash.jpg" alt="">
+                            <img src="./images/first_section_image_2.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Adventure</span>
+                                <span  class="blue">Adventure</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -272,12 +272,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/simon-migaj-Yui5vfKHuzs-unsplash-copy-2.jpg" alt="">
+                            <img src="./images/first_section_image_1.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -291,12 +291,12 @@
                     </div>
                     <div class="chiled">
                         <div  class="image-div">
-                            <img src="./images/hermansyah-7uXn7nudorc-unsplash-scaled.jpg" alt="">
+                            <img src="./images/first_section_image_3.jpg" alt="">
                             <h4>18 JUN 2022</h4>
                         </div>
                         <div class="info">
                             <div class="day-nigth">
-                                <span>Relax</span>
+                                <span class="rose">Relax</span>
                                 <p>4 Days, 3 Nigths</p>
                             </div>
                             <h3>Loga Sea</h3>
@@ -361,7 +361,7 @@
                 <div class="dest-info">
                     <div id="third-tabs-1">
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_1.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -373,7 +373,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/wil-stewart-K_TbABnVzHo-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_2.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -385,7 +385,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/Angkor-Wat-Cambodia.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_3.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -397,7 +397,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/download.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article-image_4.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -411,7 +411,7 @@
                     </div>
                     <div id="third-tabs-2">
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/wil-stewart-K_TbABnVzHo-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_1.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -423,7 +423,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_3.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -435,7 +435,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/download.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article-image_4.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -447,7 +447,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/Angkor-Wat-Cambodia.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_2.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -461,7 +461,7 @@
                     </div>
                     <div id="third-tabs-3">
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/Angkor-Wat-Cambodia.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_3.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -473,7 +473,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_1.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -485,7 +485,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/download.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article-image_4.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -497,7 +497,7 @@
                             </div>
                         </div>
                         <div class="dest-chiled">
-                            <div class="dest-image" style='background-image:url(images/wil-stewart-K_TbABnVzHo-unsplash.jpg);'>
+                            <div class="dest-image" style='background-image:url(images/article_image_2.jpg);'>
                                 <div>
                                     <i class="fa-solid fa-star"></i>
                                     <span>3.4</span>
@@ -514,7 +514,6 @@
         </div>
     </article>
 
-    
     <div class="slider-div">
         <div class="container">
             <div class="wrapper">
@@ -532,13 +531,13 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/9cd4f443930499.5801de8934d27.jpg" alt="">
+                                        <img src="/images/carousel_image_1.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                                 <div class="chiled">
                                     <div class="chiled-info">
@@ -550,51 +549,13 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/istockphoto-1319763895-170667a.jpg" alt="">
+                                        <img src="/images/carousel_image_2.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="chiled">
-                                    <div class="chiled-info">
-                                        <p>Our trip to Morocco was truly a onece in a lifetime experience 
-                                            and we are so grateful to everyone that made it happen seamlessly. 
-                                            Our travel planner, Jaouad, was increadible.
-                                        </p>
-                                        <h5>-Vand D</h5>
-                                        <span>Happy Trelo</span>
-                                    </div>
-                                    <div class="chiled-image">
-                                        <img src="/images/istockphoto-1319763895-170667a.jpg" alt="">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <span>3.4</span>
-                                        </div>
-                                    </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
-                                </div>
-                                <div class="chiled">
-                                    <div class="chiled-info">
-                                        <p>Our trip to Morocco was truly a onece in a lifetime experience 
-                                            and we are so grateful to everyone that made it happen seamlessly. 
-                                            Our travel planner, Jaouad, was increadible.
-                                        </p>
-                                        <h5>-Vand D</h5>
-                                        <span>Happy Trelo</span>
-                                    </div>
-                                    <div class="chiled-image">
-                                        <img src="/images/9cd4f443930499.5801de8934d27.jpg" alt="">
-                                        <div class="star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <span>3.4</span>
-                                        </div>
-                                    </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                             </li>
                             <li>
@@ -608,13 +569,13 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/9cd4f443930499.5801de8934d27.jpg" alt="">
+                                        <img src="/images/carousel_image_1.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                                 <div class="chiled">
                                     <div class="chiled-info">
@@ -626,13 +587,13 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/istockphoto-1319763895-170667a.jpg" alt="">
+                                        <img src="/images/carousel_image_2.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                             </li>
                             <li>
@@ -646,13 +607,13 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/istockphoto-1319763895-170667a.jpg" alt="">
+                                        <img src="/images/carousel_image_1.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                                 <div class="chiled">
                                     <div class="chiled-info">
@@ -664,13 +625,51 @@
                                         <span>Happy Trelo</span>
                                     </div>
                                     <div class="chiled-image">
-                                        <img src="/images/9cd4f443930499.5801de8934d27.jpg" alt="">
+                                        <img src="/images/carousel_image_2.jpg" alt="">
                                         <div class="star">
                                             <i class="fa-solid fa-star"></i>
                                             <span>3.4</span>
                                         </div>
                                     </div>
-                                    <img class='quote' src='./images/1200px-Cquote2_black 1.png' />
+                                    <img class='quote' src='./images/Cquote_image.png' />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="chiled">
+                                    <div class="chiled-info">
+                                        <p>Our trip to Morocco was truly a onece in a lifetime experience 
+                                            and we are so grateful to everyone that made it happen seamlessly. 
+                                            Our travel planner, Jaouad, was increadible.
+                                        </p>
+                                        <h5>-Vand D</h5>
+                                        <span>Happy Trelo</span>
+                                    </div>
+                                    <div class="chiled-image">
+                                        <img src="/images/carousel_image_1.jpg" alt="">
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>3.4</span>
+                                        </div>
+                                    </div>
+                                    <img class='quote' src='./images/Cquote_image.png' />
+                                </div>
+                                <div class="chiled">
+                                    <div class="chiled-info">
+                                        <p>Our trip to Morocco was truly a onece in a lifetime experience 
+                                            and we are so grateful to everyone that made it happen seamlessly. 
+                                            Our travel planner, Jaouad, was increadible.
+                                        </p>
+                                        <h5>-Vand D</h5>
+                                        <span>Happy Trelo</span>
+                                    </div>
+                                    <div class="chiled-image">
+                                        <img src="/images/carousel_image_2.jpg" alt="">
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>3.4</span>
+                                        </div>
+                                    </div>
+                                    <img class='quote' src='./images/Cquote_image.png' />
                                 </div>
                             </li>
                         </ul>

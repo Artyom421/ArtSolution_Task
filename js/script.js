@@ -1,4 +1,4 @@
-function active(id) {
+function setActiveNavItem(id) {
     
     let btn = document.getElementById('menu-btn')
     let tagArr = document.getElementsByClassName('active')
@@ -36,16 +36,6 @@ $(function() {
     $( "#second-tabs" ).tabs();
     
     $( "#third-tabs" ).tabs();
-    
-    let spans = $("#second-tabs .chiled .info .day-nigth span")
-        
-    spans.each(function () {
-        if ( $(this).text() === 'Relax' ) {
-            $(this).addClass('rose')
-        }else if ( $(this).text() === 'Adventure' ) {
-            $(this).addClass('blue')
-        }
-    })
     
     $('.jcarousel').jcarousel().jcarouselAutoscroll({
         interval: 3000,

@@ -30,7 +30,7 @@ img {
 
 header {
     width: 100%;
-    background-image: url(/images/pexels-photo-2835436.jpeg);
+    background-image: url(/images/headerbackground.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -410,18 +410,17 @@ div[aria-hidden="false"] {
     margin-right: 12px;
 }
 
-.rose {
+.first-section .container #second-tabs .chiled .info .day-nigth span.rose {
     color: #f178b6;
     background-color: #fcddec;
 }
 
-.blue {
+.first-section .container #second-tabs .chiled .info .day-nigth span.blue {
     color: #7879f1;
     background-color: #f1f1fd;
 }
 
-.first-section .container #second-tabs .chiled .info .day-nigth 
-    .first-section {
+.first-section .container #second-tabs .chiled .info .day-nigth {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -485,7 +484,7 @@ main .travel {
 main .travel .travel-image {
     width: 480px;
     height: 800px;
-    background-image: url(/images/daniel-jensen-tQpypKA92k8-unsplash-copy-scaled.jpg);
+    background-image: url(/images/main_image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -844,7 +843,7 @@ footer {
 }
 
 footer .back-image {
-    background: url(/images/nasa-Q1p7bh3SHj8-unsplash_1647604204.jpg), #3e87f5;
+    background: url(/images/footer_background.jpg), #3e87f5;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
