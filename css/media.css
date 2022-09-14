@@ -53,7 +53,7 @@
         left: 70%;
     }   
 
-    /* slider */
+    /* Carousel */
 
     .jcarousel {
         position: relative;
@@ -105,12 +105,7 @@
 
 @media screen and (max-width:992px){
 
-    .container {
-        padding: 0 30px;
-    }
-
-    /* Header start */
- 
+    /* Header  */
 
     nav .treloo-logo {
         line-height: 60px;
@@ -148,11 +143,7 @@
         line-height: 30px;
     }
 
-    
-    
-
-     /* first tab */
-
+    /* first tab */
     
     #tabs {
         transform: translateY(-90px);
@@ -220,7 +211,7 @@
         border-radius: 30px;
     } 
 
-    /* first-section start */
+    /* first-section  */
 
     .first-section {
         padding: 20px 0 80px 0;
@@ -272,31 +263,31 @@
         display: none;
     }
     
-    section .container #second-tabs .chiled .info .day-nigth p {
+    .first-section .container #second-tabs .chiled .info .day-nigth p {
         font-size: 14px;
         font-weight: 500;
         line-height: 21px;
         color: rgba(0, 0, 0, 0.5);
     }
     
-    section .container #second-tabs .chiled .info h3 {
+    .first-section .container #second-tabs .chiled .info h3 {
         display: none;
     }
 
-    section .container #second-tabs .chiled .info .price {
+    .first-section .container #second-tabs .chiled .info .price {
         display: flex;
         flex-direction: column;
     }
     
-    section .container #second-tabs .chiled .info .price p {
+    .first-section .container #second-tabs .chiled .info .price p {
         font-size: 15px;
     }
     
-    section .container #second-tabs .chiled .info .price p span {
+    .first-section .container #second-tabs .chiled .info .price p span {
         font-size: 20px;
     }
     
-    section .container #second-tabs .chiled .info .price button {
+    .first-section .container #second-tabs .chiled .info .price button {
         padding: 10px 15px;
     }
 
@@ -355,6 +346,7 @@
     main .travel .contact button {
         padding: 20px 25px;
     }
+
     /* Article start */
 
     article {
@@ -391,7 +383,7 @@
         width: 44%;
     }
 
-    /* slider */
+    /* Carousel */
 
     .jcarousel {
         position: relative;
@@ -637,7 +629,7 @@
         font-size: 20px;
     }
 
-     /* slider */
+     /* Carousel */
 
     .jcarousel {
         height: 350px;
@@ -904,7 +896,7 @@
         padding: 6px 15px;
     }
     
-    /* slider */
+    /* Carousel */
 
     .jcarousel {
         height: 350px;
@@ -931,7 +923,7 @@
         right: 0;
     }
 
-    svg {
+    .quote {
         top: 15%;
         width: 65px;
     }

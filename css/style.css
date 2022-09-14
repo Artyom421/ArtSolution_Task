@@ -299,7 +299,6 @@ div[aria-hidden="false"] {
     border-radius: 10px;
 }
 
-
 /* first-section start */
 
 .first-section {
@@ -707,18 +706,10 @@ article #third-tabs .dest-info .info i {
     color: #f178b6;
 }
 
-/* Slider */
+/* Carousel */
 
-.slider-div .container{
-}
-
-.wrapper {
-    max-width: 100%;
-
-}
 
 .jcarousel-wrapper {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -818,7 +809,7 @@ article #third-tabs .dest-info .info i {
     font-size: 14px;
 }
 
-svg {
+.quote {
     position: absolute;
     top: 28%;
     left: 50%;
