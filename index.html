@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+
+    <!-- Google-Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+    <!-- font-awesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- jquery tabs scrips -->
+
+    <!-- jquery carousel scrips -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+    <!-- <script src="./js/jquery-3.6.1.min.js"></script> -->
+    <!--  -->
+    
+    <title>Trello</title>
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="treloo-logo first-logo" id="home" onclick="active('home')">
+                    Treloo
+                </div>
+                <div class="new-menu">
+                    <button id="menu-btn">
+                        <i class="fa-solid fa-bars"></i> HOME
+                    </button>
+                    <ul id="new-menu-ul">
+                        <li id="1" onclick="active(1)" class="active">Reveiw</li>
+                        <li id="2" onclick="active(2)" class="active">Tips</li>
+                        <li id="3" onclick="active(3)" class="active">Alerts</li>
+                        <li id="4" onclick="active(4)" class="active">Blog</li>
+                    </ul>
+                </div>
+
+                <div class="treloo-logo second-logo" id="home" onclick="active('home')">
+                    Treloo
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li id="1" onclick="active(1)" class="active">Reveiw</li>
+                        <li id="2" onclick="active(2)" class="active">Tips</li>
+                        <li id="3" onclick="active(3)" class="active">Alerts</li>
+                        <li id="4" onclick="active(4)" class="active">Blog</li>
+                    </ul>
+                    <button>Contact</button>
+                </div>
+            </nav>
+            <div class="introduction">
+                <h1>Discover Your Life, Travel Where You Want</h1>
+                <p>Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="tabs">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#tabs-1">
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">
+                            <i class="fa-solid fa-hotel"></i>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-section">
+                    <div id="tabs-1">
+                        <div class="left voyage">
+                            <div>
+                                <span>Living From</span>
+                                <p>Dubai</p>
+                            </div>
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <div>
+                                <span>Going To</span>
+                                <p>New York</p>
+                            </div>
+                        </div>
+                        <div class="rigth voyage">
+                            <div>
+                                <span>Leave <i class="fa-sharp fa-solid fa-plane"></i></span>
+                                <p>23 Jan, Sat</p>
+                            </div>
+                            <i class="fa fa-calendar-days"></i>  
+                            <div>
+                                <span class="">Return <i class="fa-sharp fa-solid fa-plane back-plane"></i></span>
+                                <p>14 Feb, Thu</p>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <i class="fa fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="registration-form">
+                            <div class="inputs">
+                                <input type="text" placeholder="Enter City">
+                                <input type="date" placeholder="Enter Booking Day">
+                                <input type="text" placeholder="Enter Your Name">
+                                <input type="text" placeholder="Enter Your LastName">
+                            </div>
+                            <button>BOOKING</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="first-section">
+        <div class="container">
+            <h2>Special Upcoming Offers</h2>
+            <div id="second-tabs">
+                <ul>
+                    <li><a href="#second-tabs-1">Team</a></li>
+                    <li><a href="#second-tabs-2">Couple</a></li>
+                    <li><a href="#second-tabs-3">Family</a></li>
+                </ul>
+                <div id="second-tabs-1"></div>
+                <div id="second-tabs-2"></div>
+                <div id="second-tabs-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="travel">
+                <div class="travel-image">
+                    <div>
+                        <span>5000+</span>
+                        <p>TOURISTS</p>
+                    </div>
+                    <div>
+                        <span>300+</span>
+                        <p>DESTINATIONS</p>
+                    </div>
+                    <div>
+                        <span>150+</span>
+                        <p>HOTELS</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Travel Any Corner of The World With Us</h2>
+                    <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                        <br>
+                        <br>
+                        Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                    </p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <article>
+        <div class="container">
+            <h2>Recommended Destination</h2>
+            <div id="third-tabs">
+                <ul>
+                    <li>
+                        <a href="#third-tabs-1">
+                            Popular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#third-tabs-2">
+                            Adventure 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#third-tabs-3">
+                            Beath
+                        </a>
+                    </li>
+                </ul>
+                <div class="dest-info">
+                    <div id="third-tabs-1"></div>
+                    <div id="third-tabs-2"></div>
+                    <div id="third-tabs-3"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+    <div class="slider-div">
+        <div class="container">
+            <div class="wrapper">
+                <div class="jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+        
+                    <div class="controls">
+                        <a href="#" class="jcarousel-control-prev controls">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#" class="jcarousel-control-next controls">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="container">
+            <div class="back-image">
+                <h2>Don’t Miss The 50% Discount if You register Today</h2>
+                <button>Register Today</button>
+            </div>
+            <div class="last-div">
+                <span>© 2022 Treloo LLC - All right reserved.</span>
+                <ul>
+                    <li>Review</li>
+                    <li>Tips</li>
+                    <li>Alerts</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
