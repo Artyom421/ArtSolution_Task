@@ -48,38 +48,36 @@ function setActiveFirstTab(id) {
     }
 }
 
-function setActiveSecondTab(id) {
+function setActiveTab(id, type) {
 
     let secondTabLi = document.getElementsByClassName('second-tabs-li')
     let secondTabContents = document.getElementsByClassName('second-tabs-content')
-
-    for ( let i = 1; i <= secondTabContents.length; i++ ) {
-        if ( i === id ) {
-            secondTabLi[i-1].classList.add('active')
-            secondTabContents[i-1].classList.remove('hidden')
-        }else {
-            secondTabLi[i-1].classList.remove('active')
-            secondTabContents[i-1].classList.add('hidden')
-        }
-    }
-}
-
-function isActivThidrTab(id) {
-
     let thirdTabLi = document.getElementsByClassName('third-tab-li')
     let thirdTabContents = document.getElementsByClassName('third-tab-content')
 
-    for ( let i = 1; i <= thirdTabContents.length; i++ ) {
-        if ( i === id ) {
-            thirdTabLi[i-1].classList.add('active')
-            thirdTabContents[i-1].classList.remove('hidden')
-        }else {
-            thirdTabLi[i-1].classList.remove('active')
-            thirdTabContents[i-1].classList.add('hidden')
+    if ( type === 'second' ) {
+        for ( let i = 1; i <= secondTabContents.length; i++ ) {
+            if ( i === id ) {
+                secondTabLi[i-1].classList.add('active')
+                secondTabContents[i-1].classList.remove('hidden')
+            }else {
+                secondTabLi[i-1].classList.remove('active')
+                secondTabContents[i-1].classList.add('hidden')
+            }
+        }
+    }else if ( type === 'third' ) {
+        for ( let i = 1; i <= thirdTabContents.length; i++ ) {
+            if ( i === id ) {
+                thirdTabLi[i-1].classList.add('active')
+                thirdTabContents[i-1].classList.remove('hidden')
+            }else {
+                thirdTabLi[i-1].classList.remove('active')
+                thirdTabContents[i-1].classList.add('hidden')
+            }
         }
     }
-}
 
+}
 
 $(function() {
 

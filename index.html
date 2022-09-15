@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS links -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- Google-Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <!-- font-awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- jquery scrips -->
@@ -124,9 +123,9 @@
             <h2>Special Upcoming Offers</h2>
             <div id="second-tabs">
                 <ul>
-                    <li class="second-tabs-li active" onclick="setActiveSecondTab(1)">Team</li>
-                    <li class="second-tabs-li" onclick="setActiveSecondTab(2)">Couple</li>
-                    <li class="second-tabs-li" onclick="setActiveSecondTab(3)">Family</li>
+                    <li class="second-tabs-li active" onclick="setActiveTab(1, 'second')">Team</li>
+                    <li class="second-tabs-li" onclick="setActiveTab(2, 'second')">Couple</li>
+                    <li class="second-tabs-li" onclick="setActiveTab(3, 'second')">Family</li>
                 </ul>
                 <div class="second-tabs-content" >
                     <div class="chiled">
@@ -344,9 +343,9 @@
             <h2>Recommended Destination</h2>
             <div id="third-tabs">
                 <ul>
-                    <li class="third-tab-li active" onclick="isActivThidrTab(1)">Popular</li>
-                    <li class="third-tab-li" onclick="isActivThidrTab(2)">Adventure</li>
-                    <li class="third-tab-li" onclick="isActivThidrTab(3)">Beath</li>
+                    <li class="third-tab-li active" onclick="setActiveTab(1, 'third')">Popular</li>
+                    <li class="third-tab-li" onclick="setActiveTab(2, 'third')">Adventure</li>
+                    <li class="third-tab-li" onclick="setActiveTab(3, 'third')">Beath</li>
                 </ul>
                 <div class="dest-info">
                     <div class="third-tab-content">

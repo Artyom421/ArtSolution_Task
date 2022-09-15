@@ -65,7 +65,7 @@
     }
     
     .jcarousel ul li .chiled {
-        margin: 0 10px 70px 10px;
+        margin: 0 10px 120px 10px;
         width: 50%;
         background-color: #ffffff;
         border-radius: 50px;
@@ -74,7 +74,7 @@
     }
 
     .jcarousel ul li .chiled .chiled-info {
-        padding: 50px 27px 40px 47px;
+        padding: 50px 27px 60px 47px;
         font-size: 18px;
         line-height: 30px;
     }
@@ -157,18 +157,14 @@
 
     #tabs ul li {
         border-radius: 20px;
-    }
-
-    #tabs ul li a{
         padding: 10px 15px;
-        border-radius: 20px;
     }
 
     #tabs ul li a i {
         font-size: 18px;
     }
 
-    #tabs ul li a span {
+    #tabs ul li span {
         font-size: 15px;
         line-height: 20px;
     }
@@ -385,6 +381,10 @@
 
     /* Carousel */
 
+    .carousel-div {
+        padding: 150px 0;
+    }
+
     .jcarousel {
         position: relative;
         overflow: hidden;
@@ -404,7 +404,7 @@
     }
 
     .jcarousel ul li .chiled .chiled-info {
-        padding: 50px 27px 30px 47px;
+        padding: 50px 27px 50px 47px;
         font-size: 16px;
         line-height: 25px;
     }
@@ -596,13 +596,11 @@
         font-size: 16px;
     }
     
-    
     .bottom-section #tabs-2 .registration-form button {
         padding: 6px 10px;
         font-size: 16px;
     }
     
-
     /* main */
 
     main {
@@ -631,12 +629,16 @@
 
      /* Carousel */
 
+     .carousel-div {
+        padding: 100px 0;
+    }
+
     .jcarousel {
         height: 350px;
     }
     
     .jcarousel ul li .chiled .chiled-info {
-        padding: 50px 27px 30px ;
+        padding: 50px 27px 40px ;
         font-size: 14px;
         line-height: 20px;
     }
@@ -898,12 +900,16 @@
     
     /* Carousel */
 
+    .carousel-div {
+        padding: 50px 0 ;
+    }
+
     .jcarousel {
         height: 350px;
     }
     
     .jcarousel ul li .chiled .chiled-info {
-        padding: 30px 27px 30px ;
+        padding: 30px 27px 40px ;
         font-size: 12px;
         line-height: 17px;
     }

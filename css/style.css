@@ -30,7 +30,7 @@ img {
 
 header {
     width: 100%;
-    background-image: url(/images/headerbackground.jpeg);
+    background-image: url(../images/headerbackground.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -487,7 +487,7 @@ main .travel {
 main .travel .travel-image {
     width: 480px;
     height: 800px;
-    background-image: url(/images/main_image.jpg);
+    background-image: url(../images/main_image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -738,7 +738,7 @@ article #third-tabs .dest-info .info i {
 }
 
 .jcarousel ul li .chiled {
-    margin-bottom: 85px ;
+    margin-bottom: 100px ;
     width: 49%;
     background-color: #ffffff;
     border-radius: 50px;
@@ -845,7 +845,7 @@ footer {
 }
 
 footer .back-image {
-    background: url(/images/footer_background.jpg), #3e87f5;
+    background: url(../images/footer_background.jpg), #3e87f5;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
