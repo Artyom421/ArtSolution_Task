@@ -157,14 +157,11 @@ header .introduction p {
     border-radius: 25px;
     border: none;
     background-color: white;
-}
-
-#tabs ul li a{
     padding: 15px 20px;
-    border-radius: 25px;
+    cursor: pointer;
 }
 
-#tabs ul li a i {
+#tabs ul li i {
     color: #3E86F5;
     font-size: 25px;
 }
@@ -173,7 +170,7 @@ header .introduction p {
     transform: rotateZ(-45deg);
 }
 
-#tabs ul li[tabindex='0'] {
+#tabs ul li.active {
     background-color: rgba(62, 134, 245, 0.2);
 }
 
@@ -192,14 +189,20 @@ header .introduction p {
     padding: 60px 48px;
 }
 
-div[aria-hidden="false"] {
+.bottom-section > div {
     width: 100%;
     padding: 0 !important;
-    display: flex !important;
+    display: flex ;
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
 }
+
+.bottom-section > div.hidden {
+    display: none;
+}
+
+
 
 .bottom-section .voyage {
     display: flex;
@@ -258,14 +261,14 @@ div[aria-hidden="false"] {
     border-radius: 65px;
 }
 
-.bottom-section #tabs-2 .registration-form {
+.bottom-section .registration-form {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.bottom-section #tabs-2 .registration-form .inputs {
+.bottom-section .registration-form .inputs {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +277,7 @@ div[aria-hidden="false"] {
     width: 80%;
 }
 
-.bottom-section #tabs-2 .registration-form .inputs input {
+.bottom-section .registration-form .inputs input {
     width: 48%;
     outline: none;
     padding: 10px;
@@ -288,7 +291,7 @@ div[aria-hidden="false"] {
 }
 
 
-.bottom-section #tabs-2 .registration-form button {
+.bottom-section .registration-form button {
     border: none;
     outline: none;
     padding: 10px 15px;
@@ -332,7 +335,7 @@ div[aria-hidden="false"] {
     display: flex;
     align-items: center;
     column-gap: 10px;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     border: none;
@@ -343,17 +346,13 @@ div[aria-hidden="false"] {
     background-color: #ffffff;
     border-radius: 10px;
     border: none;
-}
-
-.first-section .container #second-tabs ul li a {
     color: rgba(0, 0, 0, 0.5);
+    padding: 10px 24px;
+    cursor: pointer;
 }
 
-.first-section .container #second-tabs ul li[tabindex="0"] {
+.first-section .container #second-tabs ul li.active {
     background-color: #3E86F5;
-}
-
-.first-section .container #second-tabs ul li[tabindex="0"] a {
     color: #ffffff;
 }
 
@@ -363,6 +362,10 @@ div[aria-hidden="false"] {
     align-items: center;
     column-gap: 20px;
 } 
+
+.first-section .container #second-tabs > div.hidden {
+    display: none;
+}
 
 .first-section .container #second-tabs > div .chiled {
     padding: 21px 13px 25px 27px;
@@ -592,9 +595,6 @@ article #third-tabs {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-article #third-tabs {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -615,17 +615,12 @@ article #third-tabs ul li {
     padding: 10px 23px;
     border-radius: 10px;
     border: none;
-}
-
-article #third-tabs ul li a {
+    cursor: pointer;
     color: rgba(0, 0, 0, 0.5);
 }
 
-article #third-tabs ul li[tabindex="0"] {
+article #third-tabs ul li.active {
     background-color: #ffffff;
-}
-
-article #third-tabs ul li[tabindex="0"] a {
     color: #3E86F5;
 }
 
@@ -638,6 +633,10 @@ article #third-tabs .dest-info > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+article #third-tabs .dest-info > div.hidden {
+    display: none;
 }
 
 article #third-tabs .dest-info .dest-chiled {
@@ -707,6 +706,9 @@ article #third-tabs .dest-info .info i {
 
 /* Carousel */
 
+.carousel-div {
+    padding: 210px 0 56px;
+}
 
 .jcarousel-wrapper {
     display: flex;
