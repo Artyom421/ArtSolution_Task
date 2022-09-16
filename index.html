@@ -65,17 +65,17 @@
         <div id="tabs">
             <div>
                 <ul>
-                    <li class="active" id="tab-1-first" onclick="setActiveFirstTab('tab-1-first')">
+                    <li class="first-tabs-li active" onclick="setActiveTab(1, 'first')">
                         <i class="fa-sharp fa-solid fa-plane"></i>
                         <span>Flight</span>
                     </li>
-                    <li id="tab-1-second" onclick="setActiveFirstTab('tab-1-second')">
+                    <li class="first-tabs-li" onclick="setActiveTab(2, 'first')">
                         <i class="fa-solid fa-hotel"></i>
                         <span>Hotel</span>
                     </li>
                 </ul>
                 <div class="bottom-section">
-                    <div id="tabs-1-first-content">
+                    <div class="first-tabs-content">
                         <div class="left voyage">
                             <div>
                                 <span>Living From</span>
@@ -102,7 +102,7 @@
                             <i class="fa fa-magnifying-glass"></i>
                         </div>
                     </div>
-                    <div id="tabs-1-second-content" class="hidden">
+                    <div class="first-tabs-content hidden">
                         <div class="registration-form">
                             <div class="inputs">
                                 <input type="text" placeholder="Enter City">
@@ -343,12 +343,12 @@
             <h2>Recommended Destination</h2>
             <div id="third-tabs">
                 <ul>
-                    <li class="third-tab-li active" onclick="setActiveTab(1, 'third')">Popular</li>
-                    <li class="third-tab-li" onclick="setActiveTab(2, 'third')">Adventure</li>
-                    <li class="third-tab-li" onclick="setActiveTab(3, 'third')">Beath</li>
+                    <li class="third-tabs-li active" onclick="setActiveTab(1, 'third')">Popular</li>
+                    <li class="third-tabs-li" onclick="setActiveTab(2, 'third')">Adventure</li>
+                    <li class="third-tabs-li" onclick="setActiveTab(3, 'third')">Beath</li>
                 </ul>
                 <div class="dest-info">
-                    <div class="third-tab-content">
+                    <div class="third-tabs-content">
                         <div class="dest-chiled">
                             <div class="dest-image" style='background-image:url(images/article_image_1.jpg);'>
                                 <div>
@@ -398,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="third-tab-content hidden">
+                    <div class="third-tabs-content hidden">
                         <div class="dest-chiled">
                             <div class="dest-image" style='background-image:url(./images/article_image_1.jpg);'>
                                 <div>
@@ -448,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="third-tab-content hidden">
+                    <div class="third-tabs-content hidden">
                         <div class="dest-chiled">
                             <div class="dest-image" style='background-image:url(./images/article_image_3.jpg);'>
                                 <div>

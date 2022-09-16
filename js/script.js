@@ -50,33 +50,18 @@ function setActiveFirstTab(id) {
 
 function setActiveTab(id, type) {
 
-    let secondTabLi = document.getElementsByClassName('second-tabs-li')
-    let secondTabContents = document.getElementsByClassName('second-tabs-content')
-    let thirdTabLi = document.getElementsByClassName('third-tab-li')
-    let thirdTabContents = document.getElementsByClassName('third-tab-content')
+    const tabLi = document.getElementsByClassName(`${type}-tabs-li`)
+    const tabContents = document.getElementsByClassName(`${type}-tabs-content`)
 
-    if ( type === 'second' ) {
-        for ( let i = 1; i <= secondTabContents.length; i++ ) {
-            if ( i === id ) {
-                secondTabLi[i-1].classList.add('active')
-                secondTabContents[i-1].classList.remove('hidden')
-            }else {
-                secondTabLi[i-1].classList.remove('active')
-                secondTabContents[i-1].classList.add('hidden')
-            }
-        }
-    }else if ( type === 'third' ) {
-        for ( let i = 1; i <= thirdTabContents.length; i++ ) {
-            if ( i === id ) {
-                thirdTabLi[i-1].classList.add('active')
-                thirdTabContents[i-1].classList.remove('hidden')
-            }else {
-                thirdTabLi[i-1].classList.remove('active')
-                thirdTabContents[i-1].classList.add('hidden')
-            }
+    for ( let i = 1; i <= tabContents.length; i++ ) {
+        if ( i === id ) {
+            tabLi[i-1].classList.add('active')
+            tabContents[i-1].classList.remove('hidden')
+        }else {
+            tabLi[i-1].classList.remove('active')
+            tabContents[i-1].classList.add('hidden')
         }
     }
-
 }
 
 $(function() {
